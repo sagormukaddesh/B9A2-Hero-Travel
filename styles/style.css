@@ -3,13 +3,21 @@
 /* shared style */
 body {
     max-width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #FFF;
     font-family: 'Work Sans', sans-serif;
 }
 
 .primary-color {
     color: #FF5400;
+}
+
+.btn-primary {
+    width: 174px;
+    height: 52px;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
 }
 
 /* shared style end  */
@@ -57,9 +65,113 @@ body {
 .nav-ul li .home {
     color: #FF5400;
 }
+
 /*  nav styles end */
 
 
 /* banner styles start  */
 
 /* banner styles end */
+
+
+/* main section style start  */
+.tours-container {
+    display: flex;
+    gap: 50px;
+
+}
+
+.toure-info-container {
+    flex: 1;
+    width: 40%;
+    text-align: left;
+
+}
+
+.toure-info-container h2 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.toure-info-container ul li {
+    margin-bottom: 30px;
+}
+
+.toure-info-container p {
+    margin-bottom: 30px;
+}
+
+
+
+/* why chose us section  */
+.why-chose-us-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.why-chose-us-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 80px auto;
+
+}
+
+.chose-us-info {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+/* newsletter part  */
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    margin:100px auto;
+}
+.subscribers{
+    width: 50%;
+}
+.subscribers input {
+    width: 70%;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b7b6b5;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.subscribers button {
+    width: 80%;
+    padding: 15px ;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: wheat;
+    background-color: #FF5400;
+}
+
+/* main section style end */
+
+
+/* footer  */
+.footer {
+    margin: 100px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
