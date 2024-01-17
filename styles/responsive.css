@@ -1,0 +1,150 @@
+/* mobile screen resposive  */
+
+@media screen and (max-width:600px) {
+
+    /* banner */
+    .navigate-container {
+        display: none;
+    }
+
+    .mobile-viw-img {
+        display: block;
+    }
+
+    .container {
+        margin: 40px auto;
+    }
+
+    .where-travel-layer button {
+        width: 100%;
+    }
+
+    .where-travel-layer input,
+    .where-travel-layer select {
+        width: 100%;
+    }
+
+    .where-travel-layer input {
+        width: 95%;
+    }
+
+    .where-travel-layer select,
+    .where-travel-layer button {
+        margin-top: 1rem;
+    }
+
+    .banner-content {
+        position: relative;
+    }
+
+
+    .banner-des {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .where-travel {
+        min-width: 0;
+    }
+
+    .where-travel-layer {
+        width: 80%;
+        display: block;
+    }
+
+    .banner>img {
+        object-fit: cover;
+        min-height: 70vh;
+    }
+
+    /* banner end  */
+
+    /* tour-section  */
+
+    .tours-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .toure-info-container {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .tour-img-container img {
+        width: 100%;
+    }
+
+
+    /* newsletter  */
+    .newsletter {
+        flex-direction: column;
+        width: 90%;
+        margin: 50px auto;
+        gap: 40px;
+    }
+
+    .subscribers {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .newsletter-img img {
+        width: 100%;
+    }
+
+    /* destination  */
+    .destination-grid {
+        grid-template-areas:
+            'item-1'
+            'item-2'
+            'item-3'
+            'item-4'
+            'item-5'
+            'item-6'
+            'item-7'
+        ;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        margin: auto;
+
+    }
+
+    /* why choose us  */
+
+
+    .why-content {
+        grid-template-areas:
+            'card-1'
+            'card-2'
+            'card-3   '
+        ;
+    }
+
+    /* discount section  */
+    .deals-img-container {
+        width: 100%;
+    }
+
+    .deals-info-container,
+    .deals-info-container-2 {
+        width: 80%;
+        height: 70%;
+        top: 16%;
+        left: 10%;
+    }
+
+    /* footer  */
+    .footer {
+        width: 70%;
+        margin: auto;
+    }
+
+}
+

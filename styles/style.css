@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 /* shared style */
+
+
+* {
+    margin: 0;
+}
+
 body {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #FFF;
     font-family: 'Work Sans', sans-serif;
 }
@@ -18,58 +24,124 @@ body {
     border: none;
     border-radius: 8px;
     background: #FF5400;
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.chose-us-info {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 /* shared style end  */
 
+/* navbar  */
 .navbar {
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     align-items: center;
-}
 
-/* nav styles start  */
-.nav-img-container {
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.mobile-viw-img{
+    display: none;
+}
+.nav-img-container{
     display: flex;
     align-items: center;
     gap: 10px;
-    flex: 1;
+}
+.nav-title{
+    font-size: 2rem;
 }
 
-.nav-title {
-    color: #131318;
-    font-size: 36px;
-    font-weight: 800;
-}
-
-.navigate-container .nav-ul {
+.nav-ul{
     display: flex;
-    justify-content: space-between;
 
 }
-
-.nav-ul li {
+.nav-ul li,
+.nav-ul li a
+{
     list-style: none;
-    gap: 20px;
-}
-
-.nav-ul>li a {
-    margin-left: 20px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--Dark-02, #424247);
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #131318;
+    font-weight: 500;
 }
-
-.nav-ul li .home {
+.nav-ul .home{
     color: #FF5400;
 }
 
-/*  nav styles end */
 
+/* banner  */
+.container{
+    margin-bottom: 100px;
+}
+.banner {
+    position: relative;
+    border-radius: 16px;
+}
 
-/* banner styles start  */
+.banner-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.banner>img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.where-travel-layer {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.where-travel {
+    min-width: 833px;
+}
+.where-travel button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content p {
+    max-width: 676px;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.where-travel-layer input,
+.where-travel-layer select {
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 1.5rem;
+    width: 174px;
+}
 
 /* banner styles end */
 
@@ -78,14 +150,12 @@ body {
 .tours-container {
     display: flex;
     gap: 50px;
-
 }
 
 .toure-info-container {
     flex: 1;
     width: 40%;
     text-align: left;
-
 }
 
 .toure-info-container h2 {
@@ -103,14 +173,72 @@ body {
 }
 
 
-
-/* why chose us section  */
-.why-chose-us-description {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Choose Your Destination section */
+.chose-us-info {
+    margin-bottom: 20px;
 }
 
-.why-chose-us-info {
+.grid-item {
+    position: relative;
+}
+
+.grid-item img {
+    object-fit: cover;
+}
+
+.grid-item h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-areas:
+        'item-1 item-1 item-1 item-1 item-1 item-1 item-2 item-2 item-2 item-2 item-2 item-2'
+        'item-3 item-3 item-3 item-3 item-4 item-4 item-4 item-4 item-4  item-5 item-5 item-5'
+        'item-6 item-6 item-6 item-6 item-6 item-7 item-7 item-7 item-7 item-7 item-7 item-7'
+    ;
+    gap: 1rem;
+}
+
+.grid-item-1 {
+    grid-area: item-1;
+}
+
+.grid-item-2 {
+    grid-area: item-2;
+}
+
+.grid-item-3 {
+    grid-area: item-3;
+}
+
+.grid-item-4 {
+    grid-area: item-4;
+}
+
+.grid-item-5 {
+    grid-area: item-5;
+}
+
+.grid-item-6 {
+    grid-area: item-6;
+}
+
+.grid-item-7 {
+    grid-area: item-7;
+}
+
+.grid-item h4 {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+/* why chose us section  */
+
+.why-us-info {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -119,22 +247,158 @@ body {
 
 }
 
-.chose-us-info {
-    color: #131318;
-    font-size: 40px;
-    font-weight: 800;
+.card img {
+    width: 64px;
+    height: 64px;
 }
+
+.why-content {
+    display: grid;
+    grid-template-areas:
+        'card-1 card-1 card-2 card-2 '
+        '. card-3 card-3  .'
+    ;
+    gap: 1.5rem;
+}
+
+.card {
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.card h4 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.card-1 {
+    grid-area: card-1;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+
+    grid-area: card-2;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    grid-area: card-3;
+}
+
+
+/* discount section  */
+.deals-img-container {
+    position: relative;
+    background: url(../Images/swimimg.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 50px auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.deals-img-container-2 {
+    position: relative;
+    background: url(../Images/swimimg-2.png) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 50px auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.deals-info-container {
+    position: relative;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 15%;
+    left: 55%;
+}
+
+.deals-info-container-2 {
+    position: relative;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    top: 15%;
+    left: 5%;
+
+}
+
+.deals-description {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.primary-taxt-padding {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
 
 
 /* newsletter part  */
-.newsletter{
+.newsletter {
     display: flex;
     justify-content: space-between;
-    margin:100px auto;
+    margin: 100px auto;
+    gap: 40px;
 }
-.subscribers{
+
+.subscribers {
     width: 50%;
+    border: 1px solid rgb(195, 171, 171);
+    border-radius: 10px;
+    flex: 1;
+    padding: 20px;
 }
+
+.newsletter-img {
+    flex: 1;
+    position: relative;
+}
+
+.save-up {
+    position: absolute;
+    background: #FF5400;
+    right: 5px;
+    bottom: 50px;
+    padding: 1rem 2.2rem;
+    border-radius: 10px;
+    transform: rotate(-19.628deg);
+    text-align: center;
+
+}
+
+.save-up p,
+.save-up h4 {
+    color: #FFF;
+}
+
 .subscribers input {
     width: 70%;
     padding: 15px 25px;
@@ -147,7 +411,7 @@ body {
 
 .subscribers button {
     width: 80%;
-    padding: 15px ;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -165,7 +429,7 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: rgba(19, 19, 24, 0.05);
+
 }
 
 .footer-title {
